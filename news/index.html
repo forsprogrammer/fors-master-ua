@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fors</title>
+    <meta property="og:site_name" content="__Gysi4__ is a site about contemplation and learning the truth of the soul by Andrij Bakalejko.">
+    <meta property="article:author" content="https://github.com/forsprogrammer">
+    <meta name="description"
+        content="Here you can get acquainted with the life path and self-knowledge of the author of this site - Andrij Bakalejko.">
+    <meta property="og:title" content="__Gysi4__ is a site about the author's life.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.postimg.cc/QdQ6s2G7/fors.png">
+    <meta property="og:image:secure_url"
+        content="https://i.postimg.cc/QdQ6s2G7/fors.png">
+    <meta property="og:url" content="https://forsprogrammer.ua/">
+    <meta property="og:description"
+        content="Here you can get acquainted with the life path and self-knowledge of the author of this site - Andrij Bakalejko.">
+    <meta property="url" content="https://forsprogrammer.ua/">
+    <meta property="name" content="__Gysi4__ is a site about the author's life.">
+    <meta property="description"
+        content="Here you can get acquainted with the life path and self-knowledge of the author of this site - Andrij Bakalejko.">
+    <meta property="image" content="https://i.postimg.cc/QdQ6s2G7/fors.png">
+    <meta itemprop="url" content="https://forsprogrammer.ua/">
+    <meta itemprop="name" content="__Gysi4__ is a site about the author's life.">
+    <meta itemprop="description"
+        content="Here you can get acquainted with the life path and self-knowledge of the author of this site - Andrij Bakalejko.">
+    <meta itemprop="image" content="https://i.postimg.cc/QdQ6s2G7/fors.png">
+    <link rel="icon" href="/logo.png">
+    <link rel="stylesheet" href="/css/bg.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/silka.css">
+    <link rel="stylesheet" href="/css/svg.css">
+    <style>
+        #news:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            border-bottom: 3px solid #f52;
+            border-radius: 2px;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+            left: 0%;
+            bottom: 25px;
+        }
+
+        #menu>li>#news {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- <img src="logo.png" class="logo-img" alt="Logo"> -->
+        <input type="checkbox" id="checkbox">
+        <nav>
+            <span id="log">forsprogrammer.ua</span>
+            <ul id="menu">
+                <li><a id="home" href="/">main</a></li>
+                <li><a id="news" href="/news/">news</a></li>
+                <li><a id="about" href="/about/">about</a></li>
+                <li><a id="contacts" href="/contacts/">contacts</a></li>
+            </ul>
+
+            <div class="pc">
+                <div class="pb" id="mb"></div>
+            </div>
+
+            <label for="checkbox">
+                <svg class="menu-icon ham hamRotate ham8" viewBox="0 0 100 100" width="80"
+                    onclick="this.classList.toggle('active')">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom"
+                        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                </svg>
+            </label>
+        </nav>
+    </div>
+    <div class="welcom">
+        <div class="welcome">fors</div>
+
+    </div>
+
+    <div class="copyright">© 2022 fors</div>
+
+    <script>
+        window.onscroll = function () { scroll() };
+
+        function scroll() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("mb").style.width = scrolled + "%";
+        }
+    </script>
+
+</body>
+
+</html>
